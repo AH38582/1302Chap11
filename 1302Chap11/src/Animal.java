@@ -63,7 +63,7 @@ public class Animal {
 	public String toString() {
 		return String.format("""
 				Animal name: %s
-				Height: %.1f inches
+				Height: %.1f feet
 				Weight: %.1f lbs
 				""".formatted(getName(), getHeight(), getWeight()));
 	}
