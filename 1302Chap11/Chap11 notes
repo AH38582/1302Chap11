@@ -1,0 +1,39 @@
+chapter 11
+
+Inheritance
+- useful for reusing classes that associate with a super class (shape <-- circle, triangle, etc
+- "is a" relationship; subclass "is a" superclass
+
+extends keyword
+- extends keyword allows subclass to access superclass
+
+Superclass
+- superclass, parent class, base class, supertype (same thing, diff names)
+- **Can** be inherited by multiple classes
+
+Subclass
+- subclass, child(ren) class(es), extended class, derived class, subtype (same thing diff names)
+- A subclass inherits all data members, methods (*excluding constructors*) and any changes from a superclass
+- The subclass must implement their own constructors, and to access data members from superclass, they must use get/set methods
+- A subclass add data and methods and they can override methods
+- A subclass **cannot** inherit multiple classes
+
+super keyword
+- super. --> superclass
+	- method must exist in superclass to use
+- super() --> superclass constructor
+	- checks signature and matches appropriate method in superclass
+- java automatically calls super in child class constructors; given for free
+
+
+Constructor chaining
+- Java executes **all** default superclass constructors up the "extends" chain 
+	- Dog() --> Animal() --> Object()
+	
+
+Overriding methods
+- Subclasses can override methods from a superclass to uniquely modify a method more suited for the subclass
+- an overrided method **must** match the superclass method signature
+- private and static methods are not applicable here as they are not modifiable or private
+	- **a subclass can still inherit and access a static method using SuperClass.staticMethod()
+- Animal toString() can override Object toString to avoid getting the hashcode in a test class

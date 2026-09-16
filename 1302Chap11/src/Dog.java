@@ -7,8 +7,9 @@ public class Dog extends Animal {
 	
 //	Default constructor
 	public Dog() {
-		setWeight(2.0);
-		setHeight(5);
+		super(); // here to remind that static member is incremented in Animal class
+		setHeight(3);
+		setWeight(2);
 		setName("Dog");
 		setBreed("Golden Retriever");
 	}

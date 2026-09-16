@@ -3,12 +3,14 @@ public class Animal {
 //	height double, weight double, name String
 	private double height, weight;
 	private String name;
+	private static int numOfAnimals;
 
 //	Default constructor
 	public Animal() {
-		setHeight(1);
-		setWeight(1);
+		setHeight(1.0);
+		setWeight(1.0);
 		setName(" ");
+		Animal.numOfAnimals++;
 	}
 
 //	Convenience constructor
@@ -44,6 +46,10 @@ public class Animal {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public static int getNumOfAnimals() {
+		return Animal.numOfAnimals;
+	}
 
 //	makeNoise():String
 	public String makeNoise() {
@@ -57,8 +63,8 @@ public class Animal {
 	public String toString() {
 		return String.format("""
 				Animal name: %s
-				Height: %.1f
-				Weight: %.1f
+				Height: %.1f inches
+				Weight: %.1f lbs
 				""".formatted(getName(), getHeight(), getWeight()));
 	}
 
