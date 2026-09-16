@@ -29,7 +29,6 @@ super keyword
 Constructor chaining
 - Java executes **all** default superclass constructors up the "extends" chain 
 	- Dog() --> Animal() --> Object()
-	
 
 Overriding methods
 - Subclasses can override methods from a superclass to uniquely modify a method more suited for the subclass
