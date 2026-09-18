@@ -35,4 +35,4 @@ Overriding methods
 - an overrided method **must** match the superclass method signature
 - private and static methods are not applicable here as they are not modifiable or private
 	- **a subclass can still inherit and access a static method using SuperClass.staticMethod()
-- Animal toString() can override Object toString to avoid getting the hashcode in a test class
+- Animal toString() can override Object toString to avoid getting the random line in a test class

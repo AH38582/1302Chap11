@@ -23,6 +23,8 @@ public class AnimalTest {
 		
 		
 		System.out.println(Animal.getNumOfAnimals());
+		
+		
 	}
 
 }
